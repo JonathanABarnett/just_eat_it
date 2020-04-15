@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "683995367587",
+    "firebase_url": "https://just-eat-it-a761a.firebaseio.com",
+    "project_id": "just-eat-it-a761a",
+    "storage_bucket": "just-eat-it-a761a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683995367587:android:8b09ad0951fac58ff99716",
+        "android_client_info": {
+          "package_name": "com.alaythiaproductions.justeatit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683995367587-g0lrea9r8lcjb7oj9mimcgf1fch5li6a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbHSUKaDg-A2fBMJ007p5DdGHGxE9rPi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683995367587-g0lrea9r8lcjb7oj9mimcgf1fch5li6a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
