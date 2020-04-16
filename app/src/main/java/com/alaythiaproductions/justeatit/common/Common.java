@@ -1,5 +1,6 @@
 package com.alaythiaproductions.justeatit.common;
 
+import com.alaythiaproductions.justeatit.model.CategoryModel;
 import com.alaythiaproductions.justeatit.model.UserModel;
 
 public class Common {
@@ -10,4 +11,5 @@ public class Common {
     public static final int FULL_WIDTH_COLUMN = 1;
     public static final String CATEGORY_REF = "Category";
     public static UserModel currentUser;
+    public static CategoryModel categorySelected;
 }
