@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -30,6 +32,8 @@ public class HomeFragment extends Fragment {
 
     Unbinder unbinder;
 
+    LayoutAnimationController layoutAnimationController;
+
     @BindView(R.id.recycler_popular)
     RecyclerView recycler_popular;
     @BindView(R.id.viewpager)
@@ -45,6 +49,7 @@ public class HomeFragment extends Fragment {
         homeViewModel.getPopularList().observe(this, popularCategoryModels -> {
             MyPopularCategoriesAdapter adapter = new MyPopularCategoriesAdapter(getContext(), popularCategoryModels);
             recycler_popular.setAdapter(adapter);
+            recycler_popular.setLayoutAnimation(layoutAnimationController);
 
         });
 
@@ -57,6 +62,7 @@ public class HomeFragment extends Fragment {
     }
 
     private void init() {
+        layoutAnimationController = AnimationUtils.loadLayoutAnimation(getContext(), R.anim.layout_item_from_left);
         recycler_popular.setHasFixedSize(true);
         recycler_popular.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
     }
